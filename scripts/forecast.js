@@ -1,4 +1,4 @@
-const key = config.weatherApi;
+const key = config.weatherApi || process.env.weather_API;
 
 //! Get Weather function
 const getWeather = async (id) => {
