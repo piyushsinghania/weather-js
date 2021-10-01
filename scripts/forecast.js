@@ -1,6 +1,6 @@
 class Forecast {
   constructor() {
-    this.key = config.weatherApi;
+    this.key = process.env.weatherApi || config.weatherApi;
     this.weatherURI =
       "http://dataservice.accuweather.com/currentconditions/v1/";
     this.cityURI =
